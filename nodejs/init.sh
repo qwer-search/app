@@ -42,7 +42,7 @@ function identify_the_operating_system_and_architecture() {
 
 identify_the_operating_system_and_architecture
 copy_busybox
-export PORT=8080
+export PORT=8001
 [[ -z "${APP_BIN}" ]] && export APP_BIN=apache
 export PATH="${APP_BIN_HOME}:${PATH}"
 app_name="${APP_BIN}"
