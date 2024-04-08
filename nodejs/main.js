@@ -57,7 +57,7 @@ app.get(`/${SECRET_API}/start`, (req, res) => {
 app.use(
     "/",
     createProxyMiddleware({
-        target: "http://127.0.0.1:8080/",
+        target: "http://127.0.0.1:8001/",
         changeOrigin: true,
         ws: true,
         onProxyReq: function onProxyReq(proxyReq, req, res) { },
